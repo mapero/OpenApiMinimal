@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  description: This is an API
+  version: '1.0'
+  title: Api
+servers:
+  - url: '/api/v1.0'
+paths:
+  /object:
+    get:
+      operationId: getObject
+      summary: Get available object
+      responses:
+        '200':
+          description: Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Object'
+components:
+  schemas:
+    Object:
+      $ref: './schemas/Object.yaml#/Object'

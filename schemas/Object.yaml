@@ -1,0 +1,7 @@
+Object:
+  type: object
+  properties:
+    name:
+      type: string
+    color:
+      $ref: './Color.yaml#/Color'
